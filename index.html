@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160f22">
+  <title>My Cat Lady ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">♡ <span>just for you</span></a>
+    <span class="top-note">a tiny universe</span>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">A LITTLE UNIVERSE, JUST FOR YOU</p>
+      <div class="glowing-heart" aria-hidden="true">♡</div>
+      <p class="whisper">psst… someone made this for you</p>
+      <h1>Hey, <em>My Cat Lady.</em></h1>
+      <p class="hero-copy">I could've sent you a text.<br>But you deserve a whole little universe.</p>
+      <button class="primary-btn" id="startBtn">Enter our little world <span>↗</span></button>
+      <span class="scroll-note">SCROLL WHEN YOU'RE READY ↓</span>
+    </section>
+
+    <section class="section letter-section reveal" id="letter">
+      <p class="eyebrow">01 / A NOTE FROM ME</p>
+      <article class="letter-card">
+        <div class="letter-meta"><span>✉ a tiny letter</span><span>made with ♡</span></div>
+        <div class="stamp">♡</div>
+        <h2>For my favourite<br><em>human.</em></h2>
+        <p>There are a million ordinary things in a day, and somehow you make so many of them feel special. This little page is my way of saying that you're on my mind—not because there's an occasion, but because there doesn't need to be one.</p>
+        <p class="signature">yours, always-ish <span>♡</span></p>
+      </article>
+    </section>
+
+    <section class="section reveal" id="reasons">
+      <p class="eyebrow">02 / LITTLE THINGS I ADORE</p>
+      <h2 class="section-title">Reasons? <em>Oh, so many.</em></h2>
+      <p class="section-subtitle">Tap a card. I hid a little something in each one.</p>
+      <div class="reason-grid">
+        <button class="reason-card" data-message="Your smile has a very unfair advantage over my bad moods. One look and the day feels less annoying. ♡"><span>☼</span><strong>Your smile</strong><small>tap to unlock ↗</small></button>
+        <button class="reason-card" data-message="You can be cute, chaotic, dramatic, and ridiculously lovely all in the same five minutes. Honestly, impressive. 🐈"><span>☾</span><strong>Your whole vibe</strong><small>tap to unlock ↗</small></button>
+        <button class="reason-card" data-message="Even a boring day feels like it has a favourite part when I get to talk to you. You are often that part. ♡"><span>✷</span><strong>The little moments</strong><small>tap to unlock ↗</small></button>
+        <button class="reason-card" data-message="You don't have to be perfect to be loved. I like you for being you. 🖤"><span>♡</span><strong>Simply being you</strong><small>tap to unlock ↗</small></button>
+      </div>
+      <div class="reason-reveal" id="reasonReveal" aria-live="polite">Choose a card, Cat Lady. 🐾</div>
+    </section>
+
+    <section class="section memories-section reveal" id="memories">
+      <p class="eyebrow">03 / LITTLE PIECES OF YOU</p>
+      <h2 class="section-title">A gallery of <em>my favourites.</em></h2>
+      <p class="section-subtitle">Choose pictures from your device. They aren't uploaded anywhere.</p>
+      <label class="upload-btn" for="photoPicker">＋ Add our memories</label>
+      <input id="photoPicker" type="file" accept="image/*" multiple hidden>
+      <div class="gallery" id="gallery">
+        <div class="photo-placeholder"><span>♡</span><strong>Our moment</strong><small>Add your picture together</small></div>
+        <div class="photo-placeholder"><span>✿</span><strong>My Cat Lady</strong><small>Add one of her solo photos</small></div>
+        <div class="photo-placeholder"><span>☾</span><strong>My favourite girl</strong><small>Add another favourite</small></div>
+      </div>
+    </section>
+
+    <section class="section question-section reveal" id="question">
+      <p class="eyebrow">04 / IMPORTANT SCIENTIFIC QUESTION</p>
+      <div class="question-mark">?</div>
+      <h2 class="section-title">In every version of my life…<br><em>who would I look for?</em></h2>
+      <p class="section-subtitle">Choose wisely, My Cat Lady.</p>
+      <div class="choice-row">
+        <button class="choice-btn" id="choiceA">Someone cool 😎</button>
+        <button class="choice-btn" id="choiceB">A certain Cat Lady 🐈</button>
+      </div>
+      <p class="answer" id="answer" aria-live="polite"></p>
+    </section>
+
+    <!-- FINAL SURPRISE: only characters and heart before opening -->
+    <section class="promises-entry reveal" id="sevenPromises">
+      <p class="eyebrow">ONE LAST LITTLE SECRET</p>
+      <div class="duo-row">
+        <div class="character-wrap">
+          <img class="character-img batman-img" id="batmanImage" src="batman.png" alt="Batman character" onerror="this.style.display='none';document.getElementById('batmanFallback').style.display='block'">
+          <span class="character-fallback" id="batmanFallback" aria-label="Batman">🦇</span>
+        </div>
+        <button class="heart-trigger" id="heartTrigger" type="button" aria-label="Open the seven promises">❤️</button>
+        <div class="character-wrap">
+          <img class="character-img catlady-img" id="catladyImage" src="catlady.png" alt="Cat Lady character" onerror="this.style.display='none';document.getElementById('catladyFallback').style.display='block'">
+          <span class="character-fallback" id="catladyFallback" aria-label="Cat Lady">🐈‍⬛</span>
+        </div>
+      </div>
+      <p class="heart-hint">tap the heart ♡</p>
+
+      <div class="promise-world" id="promiseWorld" hidden>
+        <p class="eyebrow">A PROMISE FOR EVERY LITTLE STEP</p>
+        <h2 class="promise-title">Seven Promises <em>for You</em> ♡</h2>
+        <p class="promise-subtitle">Seven little steps, made just for you.</p>
+
+        <div class="promise-cast">
+          <div class="promise-character left-character">
+            <img src="batman.png" alt="" class="mini-character" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="mini-fallback">🦇</span>
+          </div>
+          <div class="path-heart">♡</div>
+          <div class="promise-character right-character">
+            <img src="catlady.png" alt="" class="mini-character" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="mini-fallback">🐈‍⬛</span>
+          </div>
+        </div>
+
+        <div class="promise-list" id="promiseList">
+          <article class="promise-step" data-step="1"><span class="step-label">ONE</span><div class="step-line"><span class="step-dot"></span></div><p class="promise-copy">I will respect your personal space
+            <br> 
+          and dreams♡</p></article>
+          <article class="promise-step" data-step="2"><span class="step-label">TWO</span><div class="step-line"><span class="step-dot"></span></div><p class="promise-copy">I will Never raise voice on you babe ♡</p></article>
+          <article class="promise-step" data-step="3"><span class="step-label">THREE</span><div class="step-line"><span class="step-dot"></span></div><p class="promise-copy">Always express love and care in little 
+            <br>
+            cute ways ♡</p></article>
+          <article class="promise-step" data-step="4"><span class="step-label">FOUR</span><div class="step-line"><span class="step-dot"></span></div><p class="promise-copy">I will be you friend, best friend ,life partner
+            <br>
+            evrything ♡</p></article>
+          <article class="promise-step" data-step="5"><span class="step-label">FIVE</span><div class="step-line"><span class="step-dot"></span></div><p class="promise-copy">I will remian honest loyal in both
+            <br>
+            easy amd difficult days ♡</p></article>
+          <article class="promise-step" data-step="6"><span class="step-label">SIX</span><div class="step-line"><span class="step-dot"></span></div><p class="promise-copy">we will grow together by accepting each others' 
+            <br>
+            flaws ♡</p></article>
+          <article class="promise-step" data-step="7"><span class="step-label">SEVEN</span><div class="step-line"><span class="step-dot"></span></div><p class="promise-copy">I will travel the whole world with
+            <br>
+            MY UNIVERSE ♡</p></article>
+        </div>
+        <p class="promise-ending" id="promiseEnding">Seven promises. One special story. ♡</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">made with an unreasonable amount of affection <span>♡</span></footer>
+<!-- Forever Love Section -->
+<section class="forever-love">
+    <div class="forever-heart">❤️</div>
+
+    <h1>I LOVE U</h1>
+
+    <h2>FOREVER ♾️</h2>
+
+    <p>My Cat Lady, today, tomorrow, and forever. 💗</p>
+
+    <div class="forever-sparkles">✨ 💕 ✨</div>
+</section>
+</body>
+</html>
